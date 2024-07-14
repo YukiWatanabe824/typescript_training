@@ -1,3 +1,3 @@
-const message: number = "hello world"
-
-console.log(message)
+const greeting = "hello";
+const text = greeting + "world"
+console.log(text)
