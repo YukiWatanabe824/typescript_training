@@ -1,3 +1,2 @@
-const greeting = "hello";
-const text = greeting + "world"
-console.log(text)
+const greeting: string = "hello"
+const target: string = "world"
