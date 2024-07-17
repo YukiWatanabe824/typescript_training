@@ -1,2 +1,2 @@
-const big = 1e8;
-const small = 4e-8;
+console.log("Hello \u{796d} world! \u0041");
+
