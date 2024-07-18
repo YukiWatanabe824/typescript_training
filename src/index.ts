@@ -6,6 +6,7 @@ const rl = createInterface({
 });
 
 rl.question("入力して", (line) => {
-  console.log(line + 1000);
+  const result = line + 1000;
+  console.log(result)
   rl.close;
 });
