@@ -1,2 +1,15 @@
-const str: string = "999"
-console.log(+str)
+import { createInterface } from 'readline'
+
+const rl = createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
+rl.question('パスワードを入力:', (password) => {
+  if (password === "123") {
+    console.log("yes")
+  } else {
+    console.log("no")
+  }
+  rl.close
+})
