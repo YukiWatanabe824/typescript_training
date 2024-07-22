@@ -14,6 +14,6 @@
 //   rl.close
 // })
 
-const str: any = "3"
-console.log(str == 3)
-console.log(str === 3)
+const x: any = undefined
+console.log(x == null)
+console.log(x === null)
