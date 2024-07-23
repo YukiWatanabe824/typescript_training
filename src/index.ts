@@ -26,9 +26,12 @@
 // // false
 // console.log(x === null)
 
-const input1 = "123", input2 = ""
+// const input1 = "123", input2 = ""
 
-const input1isNotEmpty = !!input1
-console.log(input1isNotEmpty)
-const input2isNotEmpty = !!input2
-console.log(input2isNotEmpty)
+// const input1isNotEmpty = !!input1
+// console.log(input1isNotEmpty)
+// const input2isNotEmpty = !!input2
+// console.log(input2isNotEmpty)
+
+const secret = process.env.SECRET ?? "default"
+console.log(`secretは${secret}です`)
