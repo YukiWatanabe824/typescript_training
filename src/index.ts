@@ -33,5 +33,9 @@
 // const input2isNotEmpty = !!input2
 // console.log(input2isNotEmpty)
 
-const secret = process.env.SECRET ?? "default"
-console.log(`secretは${secret}です`)
+// const secret = process.env.SECRET ?? "default"
+// console.log(`secretは${secret}です`)
+
+let userName = "yuki"
+userName ||= "test"
+console.log(userName)
