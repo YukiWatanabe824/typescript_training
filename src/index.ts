@@ -14,6 +14,14 @@
 //   rl.close
 // })
 
+const str: any = "3"
+// true
+console.log(str == 3)
+// false
+console.log(str === 3)
+
 const x: any = undefined
+// true
 console.log(x == null)
+// false
 console.log(x === null)
