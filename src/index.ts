@@ -14,14 +14,21 @@
 //   rl.close
 // })
 
-const str: any = "3"
-// true
-console.log(str == 3)
-// false
-console.log(str === 3)
+// const str: any = "3"
+// // true
+// console.log(str == 3)
+// // false
+// console.log(str === 3)
 
-const x: any = undefined
-// true
-console.log(x == null)
-// false
-console.log(x === null)
+// const x: any = undefined
+// // true
+// console.log(x == null)
+// // false
+// console.log(x === null)
+
+const input1 = "123", input2 = ""
+
+const input1isNotEmpty = !!input1
+console.log(input1isNotEmpty)
+const input2isNotEmpty = !!input2
+console.log(input2isNotEmpty)
