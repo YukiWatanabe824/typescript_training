@@ -36,6 +36,24 @@
 // const secret = process.env.SECRET ?? "default"
 // console.log(`secretは${secret}です`)
 
-let userName = "yuki"
-userName ||= "test"
-console.log(userName)
+// let userName = "yuki"
+// userName ||= "test"
+// console.log(userName)
+
+// fizzbuzzを書く
+// 3の倍数でfizz
+// 5の倍数でbuzz
+// どちらでもない場合は整数
+// 3と5の倍数のときはfizzbuzz
+
+for (let i:number = 0; i <= 15; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("fizzbuzz")
+  } else if (i % 3 === 0) {
+    console.log("fizz")
+  } else if (i % 5 === 0) {
+    console.log("buzz")
+  } else {
+    console.log(i)
+  }
+}
