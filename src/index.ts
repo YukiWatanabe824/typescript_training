@@ -63,10 +63,12 @@
 
 // console.log(ary.join(" "))
 
+const input = 123
+const test = input ? input : "nanasi"
 const obj = {
   foo: 123,
   bar: "test",
-  name: input ? input : "nanasi",
+  test,
 }
 console.log(obj.bar)
 console.log(obj.foo)
