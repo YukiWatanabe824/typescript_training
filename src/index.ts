@@ -46,14 +46,29 @@
 // どちらでもない場合は整数
 // 3と5の倍数のときはfizzbuzz
 
-for (let i:number = 0; i <= 15; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("fizzbuzz")
-  } else if (i % 3 === 0) {
-    console.log("fizz")
-  } else if (i % 5 === 0) {
-    console.log("buzz")
-  } else {
-    console.log(i)
-  }
+// let ary: string[]
+// ary = []
+
+// for (let i:number = 1; i <= 15; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     ary.push("fizzbuzz")
+//   } else if (i % 3 === 0) {
+//     ary.push("fizz")
+//   } else if (i % 5 === 0) {
+//     ary.push("buzz")
+//   } else {
+//     ary.push(`${i}`)
+//   }
+// }
+
+// console.log(ary.join(" "))
+
+const obj = {
+  foo: 123,
+  bar: "test",
+  name: input ? input : "nanasi",
 }
+console.log(obj.bar)
+console.log(obj.foo)
+console.log(obj.name)
+
