@@ -63,8 +63,15 @@
 
 // console.log(ary.join(" "))
 
-const obj = {
-  "foo": 123,
+const obj1 = {
+  foo: 123,
+  bar: 456
 }
-console.log(obj["foo"])
+
+const obj = {
+  hoge: 123,
+  ...obj1
+}
+console.log(obj.foo)
+console.log(obj.bar)
 
