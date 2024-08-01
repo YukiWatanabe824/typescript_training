@@ -75,23 +75,31 @@
 // console.log(obj.foo) //123
 // console.log(obj.bar)//456
 
-const obj1 = {
+// const obj1 = {
+//   foo: 123,
+//   bar: 456,
+//   obj2: {
+//     hoge:987,
+//     fuga: 654
+//   }
+// }
+
+// const obj = {
+//   ...obj1
+// }
+// console.log(obj.foo) //123
+// console.log(obj.bar)//456
+// console.log(obj.obj2.hoge)//987
+
+// obj1.foo = 0
+// console.log(obj.foo)//123
+// obj1.obj2.hoge = 0
+// console.log(obj.obj2.hoge)//0
+
+const obj: {
+  foo: number;
+  bar: string;
+} = {
   foo: 123,
-  bar: 456,
-  obj2: {
-    hoge:987,
-    fuga: 654
-  }
-}
-
-const obj = {
-  ...obj1
-}
-console.log(obj.foo) //123
-console.log(obj.bar)//456
-console.log(obj.obj2.hoge)//987
-
-obj1.foo = 0
-console.log(obj.foo)//123
-obj1.obj2.hoge = 0
-console.log(obj.obj2.hoge)//0
+  bar: "abc",
+};
