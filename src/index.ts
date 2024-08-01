@@ -63,15 +63,26 @@
 
 // console.log(ary.join(" "))
 
+// const obj1 = {
+//   foo: 123,
+//   bar: 456
+// }
+
+// const obj = {
+//   hoge: 123,
+//   ...obj1
+// }
+// console.log(obj.foo) //123
+// console.log(obj.bar)//456
+
 const obj1 = {
   foo: 123,
   bar: 456
 }
 
 const obj = {
-  hoge: 123,
+  foo: 123,
   ...obj1
 }
-console.log(obj.foo)
-console.log(obj.bar)
-
+console.log(obj.foo) //123
+console.log(obj.bar)//456
