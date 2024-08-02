@@ -96,10 +96,20 @@
 // obj1.obj2.hoge = 0
 // console.log(obj.obj2.hoge)//0
 
-const obj: {
-  foo: number;
-  bar: string;
-} = {
+// const obj: {
+//   foo: number;
+//   bar: string;
+// } = {
+//   foo: 123,
+//   bar: "abc",
+// };
+
+type FooBar = {
+  foo: number
+  bar: string
+}
+
+const obj: FooBar = {
   foo: 123,
-  bar: "abc",
-};
+  bar: "test"
+}
