@@ -104,7 +104,7 @@
 //   bar: "abc",
 // };
 
-type FooBar = {
+interface FooBar{
   foo: number
   bar: string
 }
