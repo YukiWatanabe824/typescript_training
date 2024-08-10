@@ -122,7 +122,8 @@
 
 type FooBar = {
   foo: number
-  bar: number
+  // 読み取り専用化
+  readonly bar: number
   baz?: number
 }
 
@@ -130,3 +131,6 @@ const obj: FooBar = {
   foo: 123,
   bar: 456,
 }
+
+// これは読み取り専用プロパティなのでNG
+obj.bar = 123456
