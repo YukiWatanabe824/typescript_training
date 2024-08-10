@@ -120,17 +120,28 @@
 // const num: number = obj.fuga
 // console.log(num) // →undefind
 
-type FooBar = {
-  foo: number
-  // 読み取り専用化
-  readonly bar: number
-  baz?: number
-}
+// type FooBar = {
+//   foo: number
+//   // 読み取り専用化
+//   readonly bar: number
+//   baz?: number
+// }
 
-const obj: FooBar = {
+const obj = {
   foo: 123,
-  bar: 456,
+  bar: "abc",
 }
 
-// これは読み取り専用プロパティなのでNG
-obj.bar = 123456
+// // これは読み取り専用プロパティなのでNG
+// obj.bar = 123456
+
+const num: number = 0
+// 型TはNumber型
+type T = typeof num
+
+type Obj = typeof obj
+// objの型を抽出して使用できる
+const object: Obj = {
+  foo: 123456789,
+  bar: "Sting型"
+}
