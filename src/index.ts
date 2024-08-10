@@ -104,12 +104,18 @@
 //   bar: "abc",
 // };
 
-interface FooBar{
-  foo: number
-  bar: string
+type FooBar = {
+  [foo: string]: number
 }
 
 const obj: FooBar = {
   foo: 123,
-  bar: "test"
+  bar: 456
 }
+
+// プロパティの値を代入する形式で任意のプロパティと値のセットを作れる
+obj.hoge = 789
+
+// 値を定義していないプロパティの値を代入すると型注釈と異なるundefindが代入されてしまう
+const num: number = obj.fuga
+console.log(num) // →undefind
