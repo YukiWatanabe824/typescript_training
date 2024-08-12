@@ -127,21 +127,41 @@
 //   baz?: number
 // }
 
-const obj = {
+// const obj = {
+//   foo: 123,
+//   bar: "abc",
+// }
+
+// // // これは読み取り専用プロパティなのでNG
+// // obj.bar = 123456
+
+// const num: number = 0
+// // 型TはNumber型
+// type T = typeof num
+
+// type Obj = typeof obj
+// // objの型を抽出して使用できる
+// const object: Obj = {
+//   foo: 123456789,
+//   bar: "Sting型"
+// }
+
+type FooBar{
+  foo: number
+  bar: string
+}
+
+type FooBarBaz{
+  foo: number
+  bar: string
+  baz: boolean
+}
+
+const obj: FooBarBaz = {
   foo: 123,
-  bar: "abc",
+  bar: "456",
+  baz: true
 }
 
-// // これは読み取り専用プロパティなのでNG
-// obj.bar = 123456
-
-const num: number = 0
-// 型TはNumber型
-type T = typeof num
-
-type Obj = typeof obj
-// objの型を抽出して使用できる
-const object: Obj = {
-  foo: 123456789,
-  bar: "Sting型"
-}
+// FooBarBazはFooBarの部分型であるので、FooBar型のobj2にobjを代入できる
+const obj2: FooBar = obj
