@@ -146,22 +146,34 @@
 //   bar: "Sting型"
 // }
 
-type FooBar{
-  foo: number
-  bar: string
+// type FooBar{
+//   foo: number
+//   bar: string
+// }
+
+// type FooBarBaz{
+//   foo: number
+//   bar: string
+//   baz: boolean
+// }
+
+// const obj: FooBarBaz = {
+//   foo: 123,
+//   bar: "456",
+//   baz: true
+// }
+
+// // FooBarBazはFooBarの部分型であるので、FooBar型のobj2にobjを代入できる
+// const obj2: FooBar = obj
+
+type Family<parent, child> = {
+  mother: parent,
+  father: parent,
+  child: child
 }
 
-type FooBarBaz{
-  foo: number
-  bar: string
-  baz: boolean
+const user: Family<Number, String> = {
+  mother: 123,
+  father: 456,
+  child: "10"
 }
-
-const obj: FooBarBaz = {
-  foo: 123,
-  bar: "456",
-  baz: true
-}
-
-// FooBarBazはFooBarの部分型であるので、FooBar型のobj2にobjを代入できる
-const obj2: FooBar = obj
