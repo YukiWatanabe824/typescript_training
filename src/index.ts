@@ -166,14 +166,32 @@
 // // FooBarBazはFooBarの部分型であるので、FooBar型のobj2にobjを代入できる
 // const obj2: FooBar = obj
 
-type Family<parent, child> = {
+type HasName = {
+  name: String
+}
+
+// constraint 型制約によってparent child はHasName型しか受け付けない
+type Family<parent extends HasName, child extends HasName> = {
   mother: parent,
   father: parent,
   child: child
 }
 
-const user: Family<Number, String> = {
-  mother: 123,
-  father: 456,
-  child: "10"
+type Test = {
+  name: String
 }
+
+// 制約によって{name: string}しか定義できない
+const user: Family<Test, { name: String }> = {
+  mother: {
+    name: "minami"
+  },
+  father: {
+    name: "Yuki"
+  },
+  child: {
+    name: "hinano"
+  }
+}
+
+console.log(user)
