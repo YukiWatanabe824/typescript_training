@@ -166,32 +166,34 @@
 // // FooBarBazはFooBarの部分型であるので、FooBar型のobj2にobjを代入できる
 // const obj2: FooBar = obj
 
-type HasName = {
-  name: String
-}
+// type HasName = {
+//   name: String
+// }
 
-// constraint 型制約によってparent child はHasName型しか受け付けない
-type Family<parent extends HasName, child extends HasName> = {
-  mother: parent,
-  father: parent,
-  child: child
-}
+// // constraint 型制約によってparent child はHasName型しか受け付けない
+// type Family<parent extends HasName, child extends HasName> = {
+//   mother: parent,
+//   father: parent,
+//   child: child
+// }
 
-type Test = {
-  name: String
-}
+// type Test = {
+//   name: String
+// }
 
-// 制約によって{name: string}しか定義できない
-const user: Family<Test, { name: String }> = {
-  mother: {
-    name: "minami"
-  },
-  father: {
-    name: "Yuki"
-  },
-  child: {
-    name: "hinano"
-  }
-}
+// // 制約によって{name: string}しか定義できない
+// const user: Family<Test, { name: String }> = {
+//   mother: {
+//     name: "minami"
+//   },
+//   father: {
+//     name: "Yuki"
+//   },
+//   child: {
+//     name: "hinano"
+//   }
+// }
 
-console.log(user)
+// console.log(user)
+
+let tuple: [string, number] = ["foo", 123]
