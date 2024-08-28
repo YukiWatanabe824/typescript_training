@@ -202,6 +202,14 @@
 // console.log(tuple[0]) // foo
 // console.log(tuple[1]) //123
 
-const arr = [1,2,3]
-const num:number = arr[0]
-console.log(arr[100])  //これはundefindになってしまう
+// const arr = [1,2,3]
+// const num:number = arr[0]
+// console.log(arr[100])  //これはundefindになってしまう
+
+const obj = {
+  foo: "test",
+  bar: 123
+}
+
+const {foo,bar} = obj // objのオブジェクトの値が代入される
+const {str, toppo} = obj // 存在しないプロパティへの分割代入はコンパイルエラー
