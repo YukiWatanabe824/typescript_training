@@ -196,4 +196,9 @@
 
 // console.log(user)
 
-let tuple: [string, number] = ["foo", 123]
+// let tuple: [string, number] = ["foo", 123]
+
+let tuple: [String, Number] = ["foo", 123]
+console.log(tuple[0]) // foo
+console.log(tuple[1]) //123
+
