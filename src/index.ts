@@ -198,7 +198,10 @@
 
 // let tuple: [string, number] = ["foo", 123]
 
-let tuple: [String, Number] = ["foo", 123]
-console.log(tuple[0]) // foo
-console.log(tuple[1]) //123
+// let tuple: [String, Number] = ["foo", 123]
+// console.log(tuple[0]) // foo
+// console.log(tuple[1]) //123
 
+const arr = [1,2,3]
+const num:number = arr[0]
+console.log(arr[100])  //これはundefindになってしまう
