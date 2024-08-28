@@ -208,8 +208,11 @@
 
 const obj = {
   foo: "test",
-  bar: 123
+  bar: 123,
+  baz: {
+    hoge: 456,
+    fuga: 789
+  }
 }
 
-const {foo,bar} = obj // objのオブジェクトの値が代入される
-const {str, toppo} = obj // 存在しないプロパティへの分割代入はコンパイルエラー
+const {foo,bar,baz:{hoge}} = obj // ネストしたパターンに対してもobjのオブジェクトの値が代入される
